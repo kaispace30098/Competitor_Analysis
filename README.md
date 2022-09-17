@@ -1,5 +1,5 @@
 # Competitor_Analysis
-![image](https://user-images.githubusercontent.com/93064471/185717747-1e66e6bf-78dc-4258-855b-3dc5c5d155da.png)
+![app instruction_1](https://user-images.githubusercontent.com/93064471/190879294-53588a45-4b2c-406a-999d-c3dc0a1025e7.gif)
 
 This app integrates e-bike’s data from different retail online stores and amazon.com, and provide interactive competitor analysis on price recommendations and feature comparisons for dynamic pricing and future product developments.
 
@@ -8,4 +8,5 @@ The Data folder contains data which is collected from different online shops and
 The Model folder contains models for amazon.com is mainly used to train the model for price predictions. There will always be a fine-tuned model saved as a pickle file, and extra Xgboost and Random forest algorithms are also included for user to compare and double check. R-squared, the coefficient of determination is used to verify if any model underfitting is occurred. The retraining threshold is set to be R-square accuracy 80%, if the R-square is lower than 80%, models’ hyperparameters are going to be fine-tuned by Bayesian optimization approach in experiment file, furtherly, exploratory data analysis and featuring engineering will get involved if the tuned model doesn’t not reach the threshold .
 
 The App folder contains python files to run Streamlit as a UI. This application has two pages. The first page includes different retailers’ information, by filtering the brands and entering the specs, the price distribution chart will be shown to provide market price range. Competitor Comparison is in the second section below the page. By choosing the desired competitors, users can find out what may be competitive features on the market. A 3-D scatter plot is also provided for user to find out what may be an influential product(outliers). The second page is where the machine learning models get involved, by choosing a method and selecting preferred specs, it predicts the market price as a recommendation, and it calculates the feature importance. This page also includes the distribution plots and a heat map for user to further explore the current product development trends. Other information can be filtered and download under competitor overview at the bottom of this page.
-![app instruction_1](https://user-images.githubusercontent.com/93064471/190879294-53588a45-4b2c-406a-999d-c3dc0a1025e7.gif)
+![image](https://user-images.githubusercontent.com/93064471/185717747-1e66e6bf-78dc-4258-855b-3dc5c5d155da.png)
+
